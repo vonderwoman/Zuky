@@ -1,2 +1,0 @@
-# Zuky
-My Project
