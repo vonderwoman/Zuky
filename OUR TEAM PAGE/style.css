@@ -1,0 +1,76 @@
+/* Projects section */
+#projects .projects {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#projects .projects-header h1 {
+	margin-bottom: 50px;
+}
+.directors{
+	position:relative;
+	width:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-wrap:wrap;
+	padding:30px;
+	
+}
+.directors .card{
+	position:relative;
+	max-width:300px;
+	height:280px;
+	background:whitesmoke;
+	margin:30px 10px;
+	padding:40px 15px;
+	display:flex;
+	flex-direction:column;
+	box-shadow:0 5px 20px rgba(0,0,0,0.5);
+	transition:0.3s ease-in-out;
+}
+.directors .card:hover{
+	height:480px;
+	cursor:pointer;
+}
+.directors .card .imgBx{
+	position:relative;
+	width:260px;
+	height:260px;
+	top:-60px;
+	left:5px;
+	z-index:1;
+	box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+.directors .card .imgBx img{
+	max-width:100%;
+	border-radius:4px;
+}
+.directors .card .content{
+	position:relative;
+	margin-top:-140px;
+	padding:10px 15px;
+	text-align:center;
+	color:rgb(63, 58, 58);
+	visibility:hidden;
+	opacity:0;
+	transition:0.3s ease-in-out;
+}
+.directors .card .content p,.directors .card .content h2{
+	color:rgb(63, 58, 58);
+}
+.directors .card .content h2{
+	font-size:20px;
+}
+.directors .card .content p{
+	font-size:12px;
+	font-weight: 500;
+}
+.directors .card:hover .content{
+	visibility: visible;
+	opacity:1;
+	margin-top:-40px;
+	transition-delay:0.3s;
+}
+/* End Projects section */
